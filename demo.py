@@ -127,7 +127,7 @@ def read_feat(df):
     history_list = []
     type = df['type'].values[0]
 
-    # 划分数据集
+   
     groups = df.groupby(['courier_id', 'wave_index'])
     for name, group in tqdm(groups):
         if type == 'train':
